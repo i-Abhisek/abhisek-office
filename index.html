@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Office · Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="bar"><b id="brand"></b><span id="status">Visitor entrance</span></div>
+<nav id="nav" aria-label="Portfolio sections"></nav>
+<div id="places" aria-label="Places in the office"></div>
+<div id="caption" aria-live="polite"><div class="who"></div><div class="say"></div></div>
+<button id="skip">Skip walkthrough</button>
+<div id="err"></div>
+<div id="welcome">
+  <form class="card" onsubmit="return false">
+    <h1 id="wTitle"></h1>
+    <p>Tell us your name. The receptionist will walk you to the boss’s chamber and knock on the door for you.</p>
+    <label for="nm" style="display:none">Your name</label>
+    <input id="nm" placeholder="Your name" maxlength="30" autocomplete="given-name">
+    <button class="main" id="go">Enter the office</button>
+  </form>
+</div>
+<div id="modal"><div class="card" id="mcard"></div></div>
+
+<script src="js/three.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
